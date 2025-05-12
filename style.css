@@ -1,7 +1,14 @@
 * {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0;
     margin: 0;
+}
+
+.stars, .container, .player, .grade_number, .grade_tn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 body {
@@ -12,9 +19,6 @@ body {
 
 .container {
     height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #f1f1f1;
     border: ridge 10px rgb(44, 44, 34);
     gap: 3vw;
@@ -30,10 +34,36 @@ body {
     height: 90vh;
     width: 50vw;
     border: ridge 5px #3f3e3e;
+    display: grid;
 }
 
 .video {
     height: 90vh;
     width: 16vw;
     border: ridge 5px #3f3e3e;
+}
+
+.player {
+    width: 50vw;
+    height: 60vh;
+}
+
+.grade {
+    width: 50vw;
+    height: 30vh;
+    gap: 20px;
+    display: grid;
+}
+
+.star, .grade_text {
+    font-size: 70px;
+}
+
+#grade_num {
+    font-size: 90px;
+    margin-right: 15px;
+}
+
+.yellow {
+    color: rgb(221, 221, 15);
 }
