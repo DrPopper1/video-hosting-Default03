@@ -17,10 +17,23 @@ body {
     align-items: center;
     background-color: #f1f1f1;
     border: ridge 10px rgb(44, 44, 34);
+    gap: 3vw;
 }
 
-.favorite {}
+.favorite {
+    height: 90vh;
+    width: 16vw;
+    border: ridge 5px #3f3e3e;
+}
 
-.player-container {}
+.player-container {
+    height: 90vh;
+    width: 50vw;
+    border: ridge 5px #3f3e3e;
+}
 
-.video {}
+.video {
+    height: 90vh;
+    width: 16vw;
+    border: ridge 5px #3f3e3e;
+}
