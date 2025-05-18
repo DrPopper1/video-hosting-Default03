@@ -3,40 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Видео хостинг Дефолта</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <!-- Блок 1: Избранные видео -->
+  <div class="block" id="favorites">
+    <h3></h3>
+    <div id="favoritesList"></div>
+  </div>
 
-    <div class="container">
+  <!-- Блок 2: Плеер и оценка -->
+  <div class="block" id="playerBlock">
+    <h3></h3>
+    <video id="videoPlayer" controls>
+      <source src="">
+      Ваш браузер не поддерживает видео тег.
+    </video>
+    <div class="rating" id="ratingBlock"></div>
+  </div>
 
-        <div class="favorite"></div>
+  <!-- Блок 3: Все видео -->
+  <div class="block" id="allVideos">
+    <h3></h3>
+    <div id="videoList"></div>
+  </div>
 
-        <div class="player-container">
-
-            <div class="player">
-                <iframe width="760" height="515" src="https://www.youtube.com/embed/sv1Q7SAqTbw?si=HPvXWAth7Q4pEcmZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="grade">
-                <div class="stars">
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                    <div class="star">☆</div>
-                </div>
-                <div class="grade_tn">
-                    <div class="grade_text"><span id="grade_num" class="yellow">5</span>баллов</div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="video"></div>
-    </div>
-
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
