@@ -5,51 +5,41 @@
 }
 
 body {
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-      padding: 10px;
-      background-image: url(img/dragon-ball-background-hrrpa3u2wp32bn8k.jpg);
-    }
-    .block {
-        background-image: url();
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      height: 90vh;
-      overflow-y: auto;
-      background: rgba(255,255,255,0.2);
-    }
-    video {
-      width: 100%;
-      height: auto;
-    }
-    .video-item {
-      margin-bottom: 10px;
-      cursor: pointer;
-    }
-    .rating {
-        display: flex;
-        gap: 8px;
-        margin-top: 50px;
-    }
-    .star {
-          font-size: 50px;
-      cursor: pointer;
-    }
-    .star:hover,
-    .star.active {
-      color: gold;
-    }
-#favorites {
-    flex: 1;
-    width: 16vw;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
 }
-
-#playerBlock {
-    flex: 2;
+.player {
+    background-color: #1E1E1E;
+    padding: 20px;
+    text-align: center;
 }
-
-#allVideos {
-    flex: 1;
+.video-space {
+    background-color: #2A2A2A;
+    padding: 20px;
+    margin-top: 20px;
+}
+.all-videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #1E1E1E;
+}
+.video-thumbnail {
+    width: 150px;
+    height: 100px;
+    background-color: #6A0DAD;
+    margin: 10px;
+}
+.video-info {
+    margin-top: 10px;
+}
+.video-info h2, .video-info p {
+    margin: 5px 0;
+}
+.rating {
+    color: #D1C4E9;
 }

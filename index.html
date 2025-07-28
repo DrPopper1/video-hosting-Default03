@@ -3,32 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Видео хостинг Дефолта</title>
+    <title>Видео Плеер Дефолта</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="img/site.ico">
 </head>
 <body>
-  <!-- Блок 1: Избранные видео -->
-  <div class="block" id="favorites">
-    <h3></h3>
-    <div id="favoritesList"></div>
-  </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
 
-  <!-- Блок 2: Плеер и оценка -->
-  <div class="block" id="playerBlock">
-    <h3></h3>
-    <video id="videoPlayer" controls>
-      <source src="">
-      Ваш браузер не поддерживает видео тег.
-    </video>
-    <div class="rating" id="ratingBlock"></div>
-  </div>
+    <div class="player">
+        <div>
+            <video controls width="500">
+                <source src="video/1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает встроенные видео :(
+            </video>
+        </div>
+    </div>
 
-  <!-- Блок 3: Все видео -->
-  <div class="block" id="allVideos">
-    <h3></h3>
-    <div id="videoList"></div>
-  </div>
+    <div class="video-space">
+        <div class="rating">
+            <h2>Рейтинг: ★★★★★</h2>
+        </div>
+        <div class="video-info">
+            <h2>Название видео</h2>
+            <p>Описание видео. Здесь может быть краткое описание содержания видео.</p>
+        </div>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="all-videos">
+        <div class="video-thumbnail"></div>
+        <div class="video-thumbnail"></div>
+        <div class="video-thumbnail"></div>
+        <div class="video-thumbnail"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+</html>
 </html>
